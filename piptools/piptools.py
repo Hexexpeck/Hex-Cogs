@@ -67,7 +67,6 @@ class PipTools:
 def setup(bot):
     if pipAvailable is False:
         print("You don't have Python's pip package manager? Weird. Try reinstalling Python without removing any features.")
-        await self.bot.say("You don't have Python's pip package manager? Weird. Try reinstalling Python without removing any features.")
     else:
         n = PipTools(bot)
         bot.add_cog(n)
