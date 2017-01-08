@@ -5,6 +5,7 @@ import discord
 from discord.ext import commands
 try:
     import pip
+    pipAvailable = True
 except ImportError:
     pipAvailable = False
 
