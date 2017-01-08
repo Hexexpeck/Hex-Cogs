@@ -10,11 +10,12 @@ First, use the `[p]cog repo add` command:
 ```
 Replacing `[p]` with your bot's prefix.
 
-Then use the `[p]cog install` command to install a cog:
+Then use the `[p]cog install` command to install a cog.
+For example, to install the violence cog, use:
 ```
 [p]cog install Hex-Cogs violence
 ```
-Replaceing `[p]` with your bot's prefix.
+Replaceing `[p]` with your bot's prefix. And replacing the cog `violence` with the cog you want to install.
 
 And you're done!
 
