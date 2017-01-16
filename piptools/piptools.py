@@ -19,6 +19,7 @@ class PipTools:
         """Use Python's pip dependency manager from within Discord. Currently only has upgrade, install, and uninstall commands."""
         if ctx.invoked_subcommand is None:
             await self.bot.say("Hey uh, you do know that you must specify a subcommand, right? Use [p]help pip for more info.")
+            await self.bot.send_cmd_help(ctx)
 
     @pip.command(pass_context=True)
     async def install(self, ctx, *, dependency: str):
@@ -61,8 +62,18 @@ class PipTools:
         """Info about the PipTools cog."""
         embed = discord.Embed(colour=discord.Colour.red())
         embed.add_field(name="Creator", value="Hexexpeck#8781")
-        embed.add_field(name="Version", value="0.1")
+        embed.add_field(name="Version", value="0.2")
         embed.add_field(name="Source", value="https://github.com/Hexexpeck/Hex-Cogs")
+        embed.add_field(name="Description", value="A cog that allows you to interact with Python's pip package manager within Discord.")
+        embed.add_field(name="Changelog", value="""
+v0.2 Changelog:
+* Added changelog to cog info
+* Added description to cog info
+* Command help is now sent when you use the pip command without subcommands.
+
+v0.1 Changelog:
+* Initial release
+""")
         await self.bot.say(embed=embed)
 
 def setup(bot):

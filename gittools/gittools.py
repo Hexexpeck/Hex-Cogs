@@ -37,7 +37,7 @@ class GitTools:
         embed.add_field(name="Source", value="https://github.com/Hexexpeck/Hex-Cogs")
         await self.bot.say(embed=embed)
 
-def gitcheck(self, bot):
+def gitcheck():
     try:
         check_output("git")
     except:
@@ -46,6 +46,6 @@ def gitcheck(self, bot):
         pass # do nothing
 
 def setup(bot):
-    self.gitcheck()
+    gitcheck()
     n = GitTools(bot)
     bot.add_cog(n)

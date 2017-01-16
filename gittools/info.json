@@ -3,6 +3,6 @@
     "DESCRIPTION" : "A cog that allows you to use commands for the Git utility from within Discord. Currently only has git clone functionality, a update with more functionality will be coming soon.",
     "DISABLED" : false,
     "INSTALL_MSG" : "Thank you for installing the Git Tools cog! Currently only has git clone functionality, an update with more features coming soon.",
-    "NAME" : "Hex-Cogs",
+    "NAME" : "GitTools",
     "SHORT" : "Tools for Git usable within Discord, similar to PipTools"
 }

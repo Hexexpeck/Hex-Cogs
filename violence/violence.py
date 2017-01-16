@@ -1,6 +1,6 @@
 import os
 import sys
-import discord
+# import discord
 from discord.ext import commands
 
 class Violence:

@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Hexexpeck",
+    "DESCRIPTION" : "Retrieves a file off of the Internet, requires direct link to file and exact file name",
+    "DISABLED" : false,
+    "INSTALL_MSG" : "Thank you for installing the File Retriever cog!",
+    "NAME" : "FileRetriever",
+    "SHORT" : "Retrieves a file off of the Internet, requires direct link to file and exact file name"
+}

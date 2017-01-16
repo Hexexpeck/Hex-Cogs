@@ -3,6 +3,6 @@
     "DESCRIPTION" : "Checks to see if a website is down or not.",
     "DISABLED" : false,
     "INSTALL_MSG" : "Thank you for installing the Site Status cog! Based off of the isitdown cog",
-    "NAME" : "Hex-Cogs",
+    "NAME" : "SiteStatus",
     "SHORT" : "Checks to see if a website is down or not."
 }
