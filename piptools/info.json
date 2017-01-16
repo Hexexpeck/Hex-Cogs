@@ -3,6 +3,6 @@
     "DESCRIPTION" : "A cog that contains commands for Python's package/dependency manager pip, currently has only install, upgrade, and uninstall commands. More added in soon.",
     "DISABLED" : false,
     "INSTALL_MSG" : "Thank you for installing the PipTools cog! Use [p]help pip to get started. This cog currently only has pip install, upgrade, and uninstall commands. More added soon.",
-    "NAME" : "Hex-Cogs",
+    "NAME" : "PipTools",
     "SHORT" : "A cog that helps with Python's pip package/dependency manager."
 }
