@@ -1,4 +1,4 @@
-# Hex-Cogs
+here`# Hex-Cogs
 Cogs made by me for Red - Discord Bot by Twentysix26 as part of the 100 Days of Code challenge I'm taking.
 
 ## How to install
@@ -11,11 +11,10 @@ First, use the `[p]cog repo add` command:
 Replacing `[p]` with your bot's prefix.
 
 Then use the `[p]cog install` command to install a cog.
-For example, to install the violence cog, use:
 ```
-[p]cog install Hex-Cogs violence
+[p]cog install Hex-Cogs <cog name here>
 ```
-Replaceing `[p]` with your bot's prefix. And replacing the cog `violence` with the cog you want to install.
+Replacing `[p]` with your bot's prefix. And replacing the `cog name here` with the cog you want to install.
 
 And you're done!
 
