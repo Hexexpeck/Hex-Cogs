@@ -1,4 +1,4 @@
-import aiohttp
+ asyncioimport aiohttp
 import asyncio
 # import discord
 from discord.ext import commands
@@ -34,10 +34,10 @@ class SiteStatus:
                         await self.bot.say("While checking the status of " + url + ", we encountered an error. This may/may not mean the site is down. Error code: 500 Internal Server Error")
                     else:
                         await self.bot.say("The site " + url + " is down.")
+                except asyncio.TimeoutError:
+                    await self.bot.say("The site " + url + " is down.")
                 except:
                     await self.bot.say("The site " + url + " is down.")
-            except asyncio.TimeoutError:
-                await self.bot.say("The site " + url + " is down.")
 
 def setup(bot):
     n = SiteStatus(bot)
