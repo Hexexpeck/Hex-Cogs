@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "Hexexpeck",
+    "DESCRIPTION" : "A cog made by Hexexpeck that lets you talk as your bot using your bot's console.",
+    "DISABLED" : false,
+    "INSTALL_MSG" : "Thank you for installing my Chatter cog. This cog is for the bot owner only. Console commands are `~~exit` to exit the console talk mode and `~~switch` to switch channels. **This is in beta so crashes may occur, report them and any other issues on the Hex-Cogs GitHub repository <https://github.com/Hexexpeck/Hex-Cogs> or tag Hexexpeck#8781 in Red's Discord server.**",
+    "NAME" : "Chatter",
+    "SHORT" : "Chat as your bot using your bot console"
+}
