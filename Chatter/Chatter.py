@@ -98,7 +98,7 @@ class Chatter:
         try:
             embed = discord.Embed(title='Chatter cog - Information', color=discord.Colour.red())
             embed.add_field(name="Creator", value="Hexexpeck#8781")
-            embed.add_field(name="Version", value="v0.1")
+            embed.add_field(name="Version", value="v0.2")
             embed.add_field(name="Download", value="[Hex-Cogs GitHub repository](https://cogs.red/cogs/Hexexpeck/Hex-Cogs)")
             embed.add_field(name="Description", value="A cog made by Hexexpeck to let you talk as the bot using your bot console.")
             embed.add_field(name="Commands in this cog", value="`[p]chatter righthere`, `[p]chatter overthere <channel id here>`, `[p]chattercoginfo`")
