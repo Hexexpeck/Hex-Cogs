@@ -19,7 +19,7 @@ class Chatter:
 
     @chatter.command(pass_context=True)
     @checks.is_owner()
-    async def righthere(self, ctx):
+    async def here(self, ctx):
         """Start talk mode to send messages to the current channel as your bot via the console.
 
            Console commands:
@@ -31,9 +31,8 @@ class Chatter:
            Forbidden (discord.Forbidden): Your bot does not have the permission to delete messages.
            Other: not really sure
         """
-        #await self.bot.say("Check your bot console to begin.")
         try:
-            self.bot.delete_message(ctx.message)
+            await self.bot.delete_message(ctx.message)
         except discord.Forbidden:
             await self.bot.say("Not allowed to delete messages.")
         except discord.HTTPException:
@@ -71,9 +70,8 @@ class Chatter:
             await self.bot.say("Please specify a channel ID.")
         else:
             pass
-        #await self.bot.say("Check your bot console to begin.")
         try:
-            self.bot.delete_message(ctx.message)
+            await self.bot.delete_message(ctx.message)
         except discord.Forbidden:
             await self.bot.say("No permissions, cannot delete message.")
         except discord.HTTPException:
