@@ -1,5 +1,6 @@
 # Hex-Cogs
 Cogs made by me for Red - Discord Bot by Twentysix26 as part of the 100 Days of Code challenge I'm taking.
+### Now available on the [Cogs.Red cogs website](https://cogs.red/cogs/Hexexpeck/Hex-Cogs/)
 
 ## How to install
 Use Red's downloader cog to install. Do the following:
