@@ -3,6 +3,8 @@ import sys
 from subprocess import check_output
 import discord
 from discord.ext import commands
+from cogs.utils import checks
+
 try:
     import pip
     pipAvailable = True
@@ -14,6 +16,7 @@ class PipTools:
     def __init__(self, bot):
         self.bot = bot
 
+    @checks.is_owner()
     @commands.group(pass_context=True)
     async def pip(self, ctx):
         """Use Python's pip dependency manager from within Discord. Currently only has upgrade, install, and uninstall commands."""
@@ -21,6 +24,7 @@ class PipTools:
             await self.bot.say("Hey uh, you do know that you must specify a subcommand, right? Use [p]help pip for more info.")
             await self.bot.send_cmd_help(ctx)
 
+    @checks.is_owner()
     @pip.command(pass_context=True)
     async def install(self, ctx, *, dependency: str):
         """Install a dependency from the Python Package Index."""
@@ -33,6 +37,7 @@ class PipTools:
             print("[INFO-PipTools]: Dependency install success.")
             await self.bot.say("Dependency successfully installed.")
 
+    @checks.is_owner()
     @pip.command(pass_context=True)
     async def upgrade(self, ctx, *, dependency: str):
         """Upgrades a already installed dependency."""
@@ -45,6 +50,7 @@ class PipTools:
             print("[INFO-PipTools]: Dependency upgrade success.")
             await self.bot.say("Dependency upgrade success.")
 
+    @checks.is_owner()
     @pip.command(pass_context=True)
     async def uninstall(self, ctx, *, dependency: str):
         """Uninstalls a already installed dependency. Note that this will not ask to confirm deletion of a dependency, instead it deletes the dependency as soon as a command is received."""
@@ -57,6 +63,7 @@ class PipTools:
             print("[INFO-PipTools]: Dependency uninstall success.")
             await self.bot.say("Dependency uninstall success.")
 
+    @checks.is_owner()
     @commands.command(pass_context=True)
     async def pipcoginfo(self):
         """Info about the PipTools cog."""
