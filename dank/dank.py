@@ -8,13 +8,13 @@ class Dank:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(pass_context=True)
-    async def donk(self, ctx, *, user: discord.Member):
+    @commands.command()
+    async def donk(self, *, user: discord.Member):
         """you too donk m8."""
         await self.bot.say("my m8 " + user.mention + " over here is too donk for y'all.")
 
-    @commands.command(pass_context=True)
-    async def dankometer(self, ctx, *, user: discord.Member):
+    @commands.command()
+    async def dankometer(self, *, user: discord.Member):
         """how donk is this user?"""
         person = user.mention
         if user.id == self.bot.user.id:
@@ -36,13 +36,6 @@ class Dank:
             donkrating['unknown'] = "{0}, your donk-o-meter rating is so low you can't even get 0 on the scale.".format(person)
 
             await self.bot.say('**{0}**'.format(random.choice([donkrating[i] for i in donkrating])))
-
-    async def lmao(self, ctx):
-        if message.content.startswith("ayy"):
-            await self.bot.say("lmao")
-        else:
-            pass
-
 def setup(bot):
     n = Dank(bot)
     bot.add_cog(n)
